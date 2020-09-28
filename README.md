@@ -7,3 +7,5 @@ Building a music practice app for indian music
 3. Itertools (Permutations) 
 4. Custom library for the indian classical note system 
 5. Tensorflow/Keras (Audio Matching)
+6. Aubio
+7. PyAudio
