@@ -1,3 +1,4 @@
+use_synth :pretty_bell
 #Swara Dictionary
 Sa = :C3
 ReKomal = :Db3
@@ -14,7 +15,7 @@ Ni = :B3
 UpperSa = :C4
 
 #Setting tempo
-use_bpm 150
+use_bpm 175
 
 #Defining different raga structures
 #MayaMalavaGowla/Bhairav
@@ -81,4 +82,21 @@ sleep 0.5
 play UpperSa
 sleep 2.0
 
+#Kalyani
+play Sa
+sleep 0.5
+play Re
+sleep 0.5
+play Ga
+sleep 0.5
+play MaTeevra
+sleep 0.5
+play Pa
+sleep 0.5
+play Dha
+sleep 0.5
+play Ni
+sleep 0.5
+play UpperSa
+sleep 2.0
 
