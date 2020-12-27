@@ -11,7 +11,6 @@ Building a music practice app for indian music
 - Setting of tempo according to kalams 
 - Octaves from below pa to above pa 
 - Choosing ragas 
-
 - 1 note - generate random notes (specified length)
 - 2 notes - random/alankars 
 - 3 notes - random/alankars 
@@ -19,12 +18,11 @@ Building a music practice app for indian music
 - 5 notes - random/alankars
 - 6 notes - random/alankars
 - 7 notes - random/alankars 
-
 - Combo of different note patterns 
 (depends on time signature)
-
 - Transcription and creation of new data for learning rules and flow of a raga 
-
 - Singing analysis 
 
  
+Programmatic generation of paltas 
+Random/Freestyle generation requires more data
