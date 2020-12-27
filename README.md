@@ -8,23 +8,23 @@ Building a music practice app for indian music
 4. PyFluidsynth
 
 ## Features 
-1 note - generate random notes (specified length)
-2 notes - random/alankars 
-3 notes - random/alankars 
-4 notes - random/alankars
-5 notes - random/alankars
-6 notes - random/alankars
-7 notes - random/alankars 
+- Setting of tempo according to kalams 
+- Octaves from below pa to above pa 
+- Choosing ragas 
 
-Combo of different note patterns 
+- 1 note - generate random notes (specified length)
+- 2 notes - random/alankars 
+- 3 notes - random/alankars 
+- 4 notes - random/alankars
+- 5 notes - random/alankars
+- 6 notes - random/alankars
+- 7 notes - random/alankars 
+
+- Combo of different note patterns 
 (depends on time signature)
 
-Transcription and creation of new data for learning rules and flow of a raga 
+- Transcription and creation of new data for learning rules and flow of a raga 
 
-Setting of tempo according to kalams 
-
-Octaves from below pa to above pa 
-
-Singing analysis 
+- Singing analysis 
 
  
