@@ -26,3 +26,19 @@ Building a music practice app for indian music
  
 Programmatic generation of paltas 
 Random/Freestyle generation requires more data
+
+eg 
+set of notes
+aro = [SRGMPDNS]
+avro = [SNDPMGRS]
+
+class Alankar:
+	def __init__(self, aro, avro):
+		self.aro = aro
+		self.avro = avro 
+	def ascending(self, aro):
+
+
+def ascending(aro, pattern_no):
+	for i in range(pattern_no):
+		 
