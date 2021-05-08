@@ -1,0 +1,54 @@
+.fakeimg {
+height: 300px;
+border-radius: 10px;
+border: 2px solid #172e4d;
+padding: 20px;
+}
+  
+.title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#tempo {
+    font-size: 40px;
+}
+
+.play-buttons {
+    margin-bottom: 20px; 
+    margin-top: 20px; 
+    float: center;
+    color:black;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    color: #e9e9e9;
+}
+
+a:hover {
+    color: #356161;
+}
+
+.play {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 50px solid #e9e9e9;
+    margin-left: 15px;
+}
+
+.pause {
+    width: 15px;
+    height: 60px;
+    border: none;
+    border-left: 15px solid #e9e9e9;
+    border-right: 15px solid #e9e9e9;
+}
+
+
