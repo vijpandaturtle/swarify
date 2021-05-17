@@ -29,8 +29,8 @@ def generate_pattern(main_pattern, notes, ending):
 
 def alankar_generator(num_notes, num_bars):
     '''Combining the main pattern and generation functions'''
-    notes_asc = ['S', 'R', 'G', 'M', 'P', 'D', 'N', 'Ṡ', 'Ṙ', 'Ġ', 'Ṁ', 'Ṗ']
-    notes_desc = ['Ṡ','N', 'D', 'P', 'M', 'G', 'R', 'S', 'Ṇ', 'Ḍ', 'P̣']
+    notes_asc = ['S', 'R', 'G', 'M', 'P', 'D', 'N', 'Ṡ', 'Ṙ', 'Ġ', 'Ṁ', 'Ṗ', 'Ḋ', 'Ṅ']
+    notes_desc = ['Ṡ','N', 'D', 'P', 'M', 'G', 'R', 'S', 'Ṇ', 'Ḍ', 'P̣', 'G̣', 'Ṛ']
     if num_bars > math.factorial(num_notes):
         return "Too  many  bars"
     pattern = main_pattern(num_notes, num_bars)
