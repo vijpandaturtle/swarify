@@ -40,9 +40,9 @@
 
 <div class="container" style="margin-top:30px">
   <div class="row">
-    <div class="col-5">
+    <div class="col-3">
         <form method='post' action='http://127.0.0.1:5000/generate'>
-            <div class="form-group col-5">
+            <div class="form-group">
               <label for="Level" style="color: black; font-size: 15px">Notes</label>
               <select class="form-control" id="numnotes" name="NumNotes" Required>
                 <option value="2">2</option>
@@ -53,8 +53,8 @@
                 <option value="7">7</option>
               </select>
             </div>
-            <div class="form-group col-5">
-              <label for="Level" style="color: black; font-size: 15px">Length (in Bars)</label>
+            <div class="form-group">
+              <label for="Level" style="color: black; font-size: 15px">Length</label>
               <select class="form-control" id="length" name="Length" Required>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -65,14 +65,14 @@
                 <option value="7">7</option>
               </select>
             </div>
-            <div class="form-group col-5">
+            <div class="form-group">
                 <label for="Raga" style="color: black; font-size: 15px" class="col-form-label">Raga</label>
                 <select class="form-control" id="raga" name="Raga" Required>
                   <option value="Bilawal">Bilawal</option>
                   <option value="Kafi">Kafi</option>
                 </select>
               </div>
-              <div class="form-group col-5">
+              <div class="form-group">
               <button type="submit" class="btn btn-outline-dark play-buttons">Generate</button>  
               </div>
             </form>                      
@@ -93,15 +93,34 @@
         {%endif%}
       </div>
     </div>
-    <!-- <div class="col-3" style="margin-top: 20px;">
-      <div class="form-group col-5">
-      <label for="metronome">Metronome</label>
-        <button type="submit" class="btn btn-outline-dark">Play</button>
-        <button type="submit" class="btn btn-outline-dark">Pause</button>   
-      <label for="Tempo" style="color: black; font-size: 15px">Tempo</label>
-        <input type="range" class="custom-range" min="0" max="10" id="tempo">
+    <div class="col-3" style="margin-top: 20px;">
+      <div class="form-group">
+      <label for="Tempo" style="color: black; font-size: 15px" class="col-form">Metronome</label>
+        <select class="form-control" id="tempo" name="Tempo" Required>
+          <option value="50">50 BPM</option>
+          <option value="75">75 BPM</option>
+          <option value="100">100 BPM</option>
+          <option value="125">125 BPM</option>
+          <option value="150">150 BPM</option>
+          <option value="175">175 BPM</option>
+          <option value="200">200 BPM</option>
+          <option value="225">225 BPM</option>
+        </select>
       </div>
-    </div> -->
+        <div class="form-group">  
+        <button type="submit" class="btn btn-outline-dark">Play</button>
+        <button type="submit" class="btn btn-outline-dark">Pause</button> 
+      </div>  
+      <label for="metronome">Counter</label>
+      <div class="form-group" style='margin-top: 10px;'>
+        <div class='btn' style='margin-left: 20px;'>0</div>
+      </div>
+           <div class="form-group" style='margin-top: 10px;'>    
+          <button type="submit" class="btn btn-outline-dark">+</button>
+          <button type="submit" class="btn btn-outline-dark">-</button> 
+        </div>  
+    </div>
+    </div>
 </div>
 
 <div class="jumbotron text-center" style="margin-bottom:0">
