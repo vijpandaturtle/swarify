@@ -7,8 +7,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="../js/metronome.js"></script>
-  <script src="../js/app.js"></script>
   <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
@@ -24,10 +22,7 @@
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">History</a>
-      </li>    
+        </li>    
         </ul>
     </div>  
 </nav>
@@ -94,31 +89,26 @@
       </div>
     </div>
     <div class="col-3" style="margin-top: 20px;">
+      <label style="color: black; font-size: 15px" class="col-form">Metronome</label>
       <div class="form-group">
-      <label for="Tempo" style="color: black; font-size: 15px" class="col-form">Metronome</label>
-        <select class="form-control" id="tempo" name="Tempo" Required>
-          <option value="50">50 BPM</option>
-          <option value="75">75 BPM</option>
-          <option value="100">100 BPM</option>
-          <option value="125">125 BPM</option>
-          <option value="150">150 BPM</option>
-          <option value="175">175 BPM</option>
-          <option value="200">200 BPM</option>
-          <option value="225">225 BPM</option>
-        </select>
+        <div id='tempo-display' class='btn' style='margin-left: 20px;'>0</p>
       </div>
-        <div class="form-group">  
-        <button type="submit" class="btn btn-outline-dark">Play</button>
-        <button type="submit" class="btn btn-outline-dark">Pause</button> 
+      <div class="form-group">  
+        <button type="submit" class="btn btn-outline-dark tempo-change">+ 25</button>
+        <button type="submit" class="btn btn-outline-dark tempo-change">- 25</button> 
+      </div>
+      <div class="form-group">  
+        <button type="submit" id="play-button" class="btn btn-outline-dark">Play</button>
+        <button type="submit" id="pause-button" class="btn btn-outline-dark">Pause</button> 
       </div>  
       <label for="metronome">Counter</label>
       <div class="form-group" style='margin-top: 10px;'>
-        <div class='btn' style='margin-left: 20px;'>0</div>
+        <div class='btn counter-display' style='margin-left: 20px;'>0</div>
       </div>
-           <div class="form-group" style='margin-top: 10px;'>    
-          <button type="submit" class="btn btn-outline-dark">+</button>
-          <button type="submit" class="btn btn-outline-dark">-</button> 
-        </div>  
+      <div class="form-group" style='margin-top: 10px;'>    
+        <button type="submit" class="btn btn-outline-dark counter-plus">+</button>
+        <button type="submit" class="btn btn-outline-dark counter-minus">-</button> 
+      </div>  
     </div>
     </div>
 </div>
@@ -127,4 +117,7 @@
   <p>@2021 Copyright : Vijayasri Iyer</p>
 </div>
 </body>
+<script src="../static/metronome.js"></script>
+<script src="../static/app.js"></script>
+<script src="../static/counter.js"></script>
 </html>
